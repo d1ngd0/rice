@@ -1,0 +1,20 @@
+theme = "solarized_dark"
+
+[editor]
+scrolloff = 10
+shell = ["/bin/bash", "-c"]
+line-number = "relative"
+preview-completion-insert = false
+completion-replace = true
+true-color = true
+bufferline = "multiple"
+color-modes = true
+popup-border = "all"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true

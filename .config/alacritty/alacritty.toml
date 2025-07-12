@@ -1,0 +1,7 @@
+[general]
+import = ["~/.config/alacritty/themes/themes/solarized_dark.toml"]
+
+[font]
+normal = { family = "MesloLGS Nerd Font" }
+bold = { family = "MesloLGS Nerd Font" }
+italic = { family = "MesloLGS Nerd Font" }
