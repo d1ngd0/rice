@@ -150,4 +150,4 @@ configuration {
   }
 }
 
-@theme "solarized"
+@theme "rounded-nord-dark"

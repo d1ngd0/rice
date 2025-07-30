@@ -1,0 +1,3 @@
+[submodule "/home/paul-montag/.config/rofi-themes-collection"]
+	path = /home/paul-montag/.config/rofi-themes-collection
+	url = https://github.com/lr-tech/rofi-themes-collection.git

@@ -18,7 +18,7 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | wmenu | xargs swaymsg exec --
+set $menu rofi -show run
 
 include /etc/sway/config-vars.d/*
 
@@ -198,6 +198,8 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
 #
 # Status Bar:
 #
@@ -208,3 +210,12 @@ include /etc/sway/config.d/*
 
 bindswitch lid:on output eDP-1 disable
 bindswitch lid:off output eDP-1 enable
+
+gaps inner 5
+
+# Remove the titlebar
+default_border none
+default_floating_border none
+font pango:monospace 0.001
+titlebar_padding 1
+titlebar_border_thickness 0
