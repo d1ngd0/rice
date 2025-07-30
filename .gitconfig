@@ -1,0 +1,5 @@
+[user]
+	email = paul.david.montag@gmail.com
+	name = Paul Montag
+	IdentityFile = ~/.ssh/id_ed25519
+
