@@ -1,0 +1,10 @@
+[Unit]
+Description=Make windows transparent when not focused
+
+[Service]
+Type=simple
+ExecStart=%h/.local/share/sway-contrib/inactive-windows-transparency.py --opacity 0.9
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

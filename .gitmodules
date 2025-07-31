@@ -1,3 +1,6 @@
 [submodule "/home/paul-montag/.config/rofi-themes-collection"]
 	path = /home/paul-montag/.config/rofi-themes-collection
 	url = https://github.com/lr-tech/rofi-themes-collection.git
+[submodule ".local/share/sway-contrib"]
+	path = .local/share/sway-contrib
+	url = https://github.com/OctopusET/sway-contrib.git
