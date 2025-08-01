@@ -92,10 +92,10 @@ eval "$(ssh-agent -s)"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR='nvim'
 # else
 #   export EDITOR='nvim'
 # fi
+export EDITOR=$(which hx)
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -121,4 +121,3 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export EDITOR=$(which hx)

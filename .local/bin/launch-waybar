@@ -1,0 +1,15 @@
+#!/bin/bash
+if !(which inotifywait); then
+    echo "inotifywait is not installed, try running: sudo apt install inotify-tools"
+    exit 1
+fi
+
+CONFIG_FILES="$HOME/.config/waybar/config.jsonc $HOME/.config/waybar/style.css"
+
+trap "killall waybar" EXIT
+
+while true; do
+    waybar &
+    inotifywait -e create,modify $CONFIG_FILES
+    killall waybar
+done

@@ -204,7 +204,7 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar swaybar_command waybar
+bar swaybar_command launch-waybar
 
 include /etc/sway/config.d/*
 
@@ -220,4 +220,5 @@ font pango:monospace 0.001
 titlebar_padding 1
 titlebar_border_thickness 0
 
-exec systemctl start --user transparent.service
+exec_always systemctl --user start transparent.service
+exec_always systemctl --user start waybar.service
