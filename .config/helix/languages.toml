@@ -1,3 +1,9 @@
+[language-server.cspell]
+command = "cspell-lsp"
+args = ["--stdio"]
+
 [[language]]
 name = "markdown"
-language-servers = ["marksman", "ltex-ls-plus"]
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "md" ] }
+auto-format = true
+language-servers = ["markdown-oxide", "cspell"]

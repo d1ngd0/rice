@@ -112,7 +112,7 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:/usr/local/go/bin:$HOME/.cargo/bin:$HOME/.local/bin:/home/paul-montag/go/bin:/home/paul-montag/.local/ltex-ls-plus-18.5.1-linux-x64/ltex-ls-plus-18.5.1/bin"
+export PATH="$PATH:/usr/local/go/bin:$HOME/.cargo/bin:$HOME/.local/bin:/home/paul-montag/go/bin:/home/paul-montag/.local/ltex-ls-plus-18.5.1-linux-x64/ltex-ls-plus-18.5.1/bin:/home/paul-montag/Documents/pkm/bin"
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
