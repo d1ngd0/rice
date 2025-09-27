@@ -59,7 +59,9 @@ output * bg ~/background.png fill
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
-
+input "1:1:AT_Translated_Set_2_keyboard" {
+    xkb_options "caps:swapescape"
+}
 ### Key bindings
 #
 # Basics:
@@ -219,6 +221,11 @@ default_floating_border none
 font pango:monospace 0.001
 titlebar_padding 1
 titlebar_border_thickness 0
+
+# screenshot keybindings
+bindsym Mod4+4       exec grimshot save active
+bindsym Mod4+Shift+4 exec grimshot save area
+bindsym Mod4+Ctrl+4  exec grimshot save window
 
 exec_always systemctl --user start transparent.service
 exec_always systemctl --user start waybar.service

@@ -121,3 +121,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PKM_REPO="${HOME}/Documents/pkm"
+export PKM_DEV_REPO="${HOME}/Projects/pkm-cli/pkm_test_dir"
+export XDG_SCREENSHOTS_DIR="${HOME}/Screenshots"
+export PATH="$PATH:/home/paul-montag/.influxdb/"

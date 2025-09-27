@@ -11,6 +11,9 @@ bufferline = "multiple"
 color-modes = true
 popup-border = "all"
 
+[keys.normal.g]
+F = ["expand_selection", ":sh xdg-open %{selection}", "collapse_selection"]
+
 [editor.cursor-shape]
 normal = "block"
 insert = "bar"

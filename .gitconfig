@@ -3,3 +3,5 @@
 	name = Paul Montag
 	IdentityFile = ~/.ssh/id_ed25519
 
+[pull]
+	rebase = true
