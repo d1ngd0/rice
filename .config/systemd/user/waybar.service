@@ -1,0 +1,13 @@
+[Unit]
+Description=Waybar
+BindsTo=graphical-session.target
+Wants=graphical-session-pre.target
+After=graphical-session-pre.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/launch-waybar
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
