@@ -96,3 +96,10 @@ export PKM_REPO="${HOME}/Documents/pkm"
 export PKM_DEV_REPO="${HOME}/Projects/pkm-cli/pkm_test_dir"
 export XDG_SCREENSHOTS_DIR="${HOME}/Screenshots"
 export PATH="$PATH:/home/paul-montag/.influxdb/"
+
+# Oh My ZSH stuff
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
