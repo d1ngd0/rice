@@ -1,6 +1,11 @@
 #!/bin/bash
 
-if [ "$(acpi -a)" == "Adapter 0: on-line" ]
-then
-hyprctl keyword monitor "eDP-1, disable"
+if ( cat /proc/acpi/button/lid/LID0/state | awk '$1 ~ /state/ { print $2 }' | grep -ioq "closed" ); then
+  if [ "$(acpi -a)" == "Adapter 0: on-line" ]; then
+    hyprctl keyword monitor "eDP-1, disable"
+  fi
+  # systemd login whatever will put the computer to sleep here
+else
+  hyprctl keyword monitor "e-DP-1, enable" & hyprctl reload
 fi
+

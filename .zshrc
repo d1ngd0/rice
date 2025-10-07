@@ -103,3 +103,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+# add completions for fzf to do it's things
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh

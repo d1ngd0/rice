@@ -16,7 +16,7 @@
     "temperature"
   ],
   "modules-center": [
-    "sway/workspaces"
+    "hyprland/workspaces"
   ],
   "modules-right": [
     "wlr/taskbar",
@@ -24,11 +24,12 @@
     "pulseaudio_slider",
     "pulseaudio",
     "network",
-    "sway/language"
+    "hyperland/language",
+    "bluetooth"
   ],
   /* === Modules Left === */
   "custom/archicon": {
-    "format": "󰕈",
+    "format": "",
     "on-click": "wofi --show drun",
     "tooltip": false
   },
@@ -64,7 +65,7 @@
     ]
   },
   /* === Modules Center === */
-  "sway/workspaces": {
+  "hyperland/workspaces": {
     "format": "{icon}",
     "format-icons": {
       "default": "",
@@ -120,10 +121,14 @@
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
   },
-  "sway/language": {
+  "hyperland/language": {
     "format": "{} ",
     "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
     "format-es": "ESP",
+    "format-en": "ENG"
+  },
+  "bluetooth": {
+    "format": "{} ",
     "format-en": "ENG"
   }
 }
