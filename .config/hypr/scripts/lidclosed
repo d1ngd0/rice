@@ -6,6 +6,6 @@ if ( cat /proc/acpi/button/lid/LID0/state | awk '$1 ~ /state/ { print $2 }' | gr
   fi
   # systemd login whatever will put the computer to sleep here
 else
-  hyprctl keyword monitor "e-DP-1, enable" & hyprctl reload
+  hyprctl keyword monitor "e-DP-1, enable"
 fi
 

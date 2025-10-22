@@ -13,7 +13,8 @@ popup-border = "all"
 
 [keys.normal.g]
 F = ["expand_selection", ":sh xdg-open %{selection}", "collapse_selection"]
-
+z = ["expand_selection", ":o %sh(pkm ztl --no-edit \"%{selection}\")"] # Create a new zettel
+Z = ["expand_selection", ":vsplit %sh(pkm ztl --no-edit \"%{selection}\")"] # Create a new zettel
 [editor.cursor-shape]
 normal = "block"
 insert = "bar"

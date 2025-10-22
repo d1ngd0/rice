@@ -95,7 +95,7 @@ export EDITOR=$(which hx)
 export PKM_REPO="${HOME}/Documents/pkm"
 export PKM_DEV_REPO="${HOME}/Projects/pkm-cli/pkm_test_dir"
 export XDG_SCREENSHOTS_DIR="${HOME}/Screenshots"
-export PATH="$PATH:/home/paul-montag/.influxdb/"
+export PATH="$PATH:/home/paul-montag/.local/bin"
 
 # Oh My ZSH stuff
 export ZSH="$HOME/.oh-my-zsh"
